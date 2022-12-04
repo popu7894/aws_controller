@@ -88,7 +88,7 @@ public class awsTest {
 				number = menu.nextInt();
 				}else {
 					System.out.println("concentration!");
-					continue;
+					break;
 				}
 			
 
