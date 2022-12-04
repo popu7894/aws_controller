@@ -88,7 +88,7 @@ public class awsTest {
 				number = menu.nextInt();
 				}else {
 					System.out.println("concentration!");
-					break;
+					continue;
 				}
 			
 
@@ -168,9 +168,9 @@ public class awsTest {
 		DescribeInstancesRequest request = new DescribeInstancesRequest();
 		
 		while(!done) {
-			System.out.println("in while!");
+//			System.out.println("in while!");
 			DescribeInstancesResult response = ec2.describeInstances(request);
-			System.out.println("reservations :: " + response.getReservations());
+//			System.out.println("reservations :: " + response.getReservations());
 
 			for(Reservation reservation : response.getReservations()) {
 				for(Instance instance : reservation.getInstances()) {
